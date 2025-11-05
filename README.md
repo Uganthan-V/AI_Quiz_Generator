@@ -3,6 +3,8 @@
 An AI-powered quiz generator built using **React**, **TypeScript**, and **Vite**.  
 This app allows users to generate intelligent quizzes with 10–15 multiple-choice questions using their own **Gemini API key**.  
 
+---
+
 ## 🚀 Features
 
 - ⚙️ **User-provided Gemini API key** — no internal keys used  
@@ -15,6 +17,7 @@ This app allows users to generate intelligent quizzes with 10–15 multiple-choi
 
 ## 🧱 Project Structure
 
+```
 AI_Quiz_Generator-main/
 ├── public/
 │   └── vite.svg
@@ -38,22 +41,29 @@ AI_Quiz_Generator-main/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
+```
 
 ---
 
 ## 🛠️ Installation & Setup
 
 ### 1. Clone the Repository
+```bash
 git clone https://github.com/yourusername/AI_Quiz_Generator.git
 cd AI_Quiz_Generator-main
+```
 
 ### 2. Install Dependencies
+```bash
 npm install
+```
 
 ### 3. Run the Development Server
+```bash
 npm run dev
+```
 
-Visit http://localhost:5173 in your browser.
+Visit **http://localhost:5173** in your browser.
 
 ---
 
@@ -75,27 +85,16 @@ Visit http://localhost:5173 in your browser.
 
 ---
 
-## 📸 Preview
-
-(Add screenshot or demo GIF here if available)
-
----
-
 ## 🤝 Contributing
 
 Pull requests are welcome!  
 If you have suggestions or improvements, feel free to fork the repo and submit a PR.
 
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
 
 ---
 
 ## 👨‍💻 Author
 
 **Ugandhan V**  
-AI & ML Developer | 5th Sem CSE (AI)  
+AI & ML Developer  
 ✨ “Building intelligent and interactive apps with purpose.”
