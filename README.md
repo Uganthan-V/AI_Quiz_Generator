@@ -1,73 +1,101 @@
-# React + TypeScript + Vite
+# 🧠 AI Quiz Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered quiz generator built using **React**, **TypeScript**, and **Vite**.  
+This app allows users to generate intelligent quizzes with 10–15 multiple-choice questions using their own **Gemini API key**.  
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚙️ **User-provided Gemini API key** — no internal keys used  
+- 💾 **Local storage** — API key persists even after refresh  
+- 🧩 **Dynamic Quiz Generation** — automatically creates quiz questions and options  
+- ✅ **Interactive Quiz UI** — click to select and validate answers  
+- ⚡ Built with **React + TypeScript + Vite** for fast performance and clean architecture
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧱 Project Structure
 
-## Expanding the ESLint configuration
+AI_Quiz_Generator-main/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── ApiKeyManager.tsx     # Manages API key input and local storage
+│   │   ├── OptionButton.tsx      # Handles user option selection
+│   │   ├── QuizCard.tsx          # Displays question and options
+│   │   └── QuizGenerator.tsx     # Calls Gemini API and renders quiz
+│   ├── utils/
+│   │   ├── gemini.ts             # Handles API communication
+│   │   └── storage.ts            # Provides local storage utility functions
+│   ├── App.tsx                   # Main app structure
+│   ├── App.css                   # App styling
+│   ├── main.tsx                  # Entry point
+│   └── index.css                 # Global styles
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Installation & Setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 1. Clone the Repository
+git clone https://github.com/yourusername/AI_Quiz_Generator.git
+cd AI_Quiz_Generator-main
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 2. Install Dependencies
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Run the Development Server
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Visit http://localhost:5173 in your browser.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🔑 Usage
+
+1. Enter your **Gemini API key** in the input field (the key will be saved locally).  
+2. Click **"Generate Quiz"** to fetch 10–15 AI-generated questions.  
+3. Select answers to test your knowledge.  
+4. The key remains stored even after page reload.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** React + TypeScript  
+- **Build Tool:** Vite  
+- **API:** Gemini AI (via user-provided key)  
+- **Storage:** Local Storage (browser-based persistence)
+
+---
+
+## 📸 Preview
+
+(Add screenshot or demo GIF here if available)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!  
+If you have suggestions or improvements, feel free to fork the repo and submit a PR.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Ugandhan V**  
+AI & ML Developer | 5th Sem CSE (AI)  
+✨ “Building intelligent and interactive apps with purpose.”
