@@ -1,7 +1,7 @@
 // src/utils/gemini.ts
 import { getApiKey } from './storage';
 
-const MODEL = 'gemini-2.5-flash';
+const MODEL = 'gemini-1.5-pro';
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
 export interface QuizQuestion {
